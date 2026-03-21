@@ -3,13 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}"><link rel="icon" href="{{ '/assets/mandy.png' | relative_url }}">
+  <link>
 </head>
+
+<nav class="navbar">
+  <a href=" {{'/' | relative_url}}" class="navbar-click-items">
+    <image class="navbar-image" src="{{ '/assets/mandy.png' | relative_url }}"></image>
+    <div class="navbar-text">EvenMan</div>
+  </a>  
+</nav>
+
 <body>
+
+  {% if page.date %}
+    <div class="back-button">
+      <a href="{{ '/' | relative_url}}">Home /</a>
+      <span style="font-weight: 500; color: var(--primary)">{{ page.title }}</span>
+    </div>
+  {% endif %}
 
   <div class="container">
     {{ content }}
   </div>
 
 </body>
+
+<footer>
+  <span>Connect on the following platforms</span>
+  <div>
+    <a href="https://github.com/even-man" target="_blank">Github</a> / 
+    <a href="mailto:sdmantey@gmail.com" target="_blank">Email</a> / 
+    <a href="https://www.linkedin.com/in/steven-mantey/" target="_blank">LinkedIn</a> 
+  </div>
+</footer>
+
 </html>
