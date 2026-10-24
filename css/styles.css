@@ -139,6 +139,18 @@ footer {
   color: var(--text-muted);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .navbar {
   background-color: var(--primary);
   color: var(--background);
@@ -167,7 +179,7 @@ footer {
 .navbar-image {
   padding: .2rem;
   margin-left: 1rem;
-  width: 45px;
+  width: 70px;
 }
 
 

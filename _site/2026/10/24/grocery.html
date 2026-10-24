@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fayetteville, AR Grocery Store Access</title>
+  <link rel="stylesheet" href="/css/styles.css"><link rel="icon" href="/assets/mandy.png">
+  <link>
+</head>
+
+<nav class="navbar">
+  <a href=" /" class="navbar-click-items">
+    <image class="navbar-image" src="/assets/mandy.png"></image>
+    <div class="navbar-text">Steven M</div>
+  </a>  
+</nav>
+
+<body>
+
+  
+    <div class="back-button">
+      <a href="/">Home /</a>
+      <span style="font-weight: 500; color: var(--primary)">Fayetteville, AR Grocery Store Access</span>
+    </div>
+  
+
+  <div class="container">
+    <article class="post">
+  <h1>Fayetteville, AR Grocery Store Access</h1>
+  <p class="post-date">October 24, 2026</p>
+
+  <p>I recently was thinking about grocery stores in Fayetteville, and decided I wanted to visualize the locations of the grocery stores, and their 1 mile geographic coverage. I decided to limit grocery stores to “full-service”, which I defined as a grocery store that you could buy fresh produce at. This narrowed down the list to 14 stores.</p>
+
+<h2 id="data">Data</h2>
+
+<p>The following map shows store placement within Fayetteville’s 4 wards:</p>
+
+<p><img src="/assets/grocery/Fayetteville,%20AR%20Grocery%20Store%20One%20Mile%20Radii.png" alt="Fayetteville, AR Grocery Stores and One Mile Radii" /></p>
+
+<p>I then pulled in residential population estimates for Fayetteville, which gave me a granular look at residents down to the individual address. By using spatial joins to determine residents within the 1 mile zones, I was able to calculate the following statistics:</p>
+
+<p><img src="/assets/grocery/Residents_Within_One_Mile_of_Grocery_Stores.png" alt="Grocery store resident counts" /></p>
+
+<p><img src="/assets/grocery/Population_Within_One_Mile_Zone_of_Grocery_Store.png" alt="Population within one mile zone of grocery stores" /></p>
+
+<p>I also broke down the proportions based on individual wards. This table shows <em>how many</em> stores each resident has access to as well.</p>
+
+<p><img src="/assets/grocery/Wards_and_Levels_of_Grocery_Store_Access.png" alt="Wards and levels of grocery store access" /></p>
+
+<p>Finally, I calculated each wards population density:</p>
+
+<p><img src="/assets/grocery/Ward_Resident_Density.png" alt="Wards residential density" /></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Grocery stores in Fayetteville are all clustered around main roads. Wedington, College, MLK, and Garland. When determining which grocery stores to include in the analysis, I found that there was a lack of “corner store” style grocers. For their daily staples, residents largely need to go to big-box stores.</p>
+
+<p>While many residents are within 1 mile of one of these stores, an unfortunate side effect of big-box stores is they do tend to be surrounded by busy roads with large parking lots. These are very unpleasant environments to walk in, and likely have a detrimental effect on residents choices on modes of transportation to grocery stores.</p>
+
+<p>Harps (Garland), Walmart Neighborhood Market (MLK), and Walmart Neighborhood Market (Wedington) are the top three grocery stores by amounts of residents within 1 mile. These also happen to be some of the smaller stores as compared to the supercenters, and are able to be inserted closer into residential areas. They all suffer the same issues of being close to large, pedestrian-hostile roads, though.</p>
+
+<p>Ward 2 leads as far as population density is concerned. It also leads in the highest proportion of residents that are within 1 mile of a grocery store.</p>
+
+<p>One possible reason corner stores do not exist in Fayetteville in the same way they can in larger cities, is lack of density. Big-box stores are able to draw a large amount of their customer base from the large roads that they are placed in proximity to. They rely much more on residents that live nearby and stop in for their daily needs.</p>
+
+<p>Increasing density (along with relaxing zoning regulations that forbid the building of all commercial properties in neighborhoods) would likely increase the feasibility of corner stores in Fayetteville, AR.</p>
+
+<h2 id="data-sources">Data Sources</h2>
+
+<p>Fayetteville geographic boundary data was sourced from the <a href="https://www.fayetteville-ar.gov/384/GIS-Interactive-Maps">Fayetteville, AR GIS Department</a>.</p>
+
+<p>Estimated residential density was also collected from this source.</p>
+
+<p>Grocery stores were determined by simply searching “grocery stores” in Google Maps, and only including results where produce was available.</p>
+
+</article>
+
+  </div>
+
+</body>
+
+<footer>
+  <span>Connect on the following platforms</span>
+  <div>
+    <a href="https://github.com/even-man" target="_blank">Github</a> / 
+    <a href="mailto:sdmandev@gmail.com" target="_blank">Email</a>
+  </div>
+</footer>
+
+</html>
